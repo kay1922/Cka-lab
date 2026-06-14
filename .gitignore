@@ -19,5 +19,6 @@ cka-lab/kubeconfig
 __pycache__/
 *.pyc
 
-# Claude Code local settings
+# Claude Code local settings and project memory
 .claude/
+CLAUDE.md
