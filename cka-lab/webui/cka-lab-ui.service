@@ -1,0 +1,14 @@
+[Unit]
+Description=CKA Lab Web UI
+After=network.target libvirtd.service
+
+[Service]
+Type=simple
+User=akirillov
+WorkingDirectory=/home/akirillov/projects/cka/cka-lab/webui
+ExecStart=/usr/bin/python3 /home/akirillov/projects/cka/cka-lab/webui/app.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,23 @@
+# SSH keypair — never commit private keys
+cka-lab/cka-lab-key
+cka-lab/cka-lab-key.pub
+
+# Generated cloud-init seed ISOs
+cka-lab/seeds/
+
+# Base disk images (multi-GB, rebuilt by build-*.sh)
+base-images/
+*.qcow2
+
+# Ubuntu installer ISO
+*.iso
+
+# Local kubeconfig copied off the control plane
+cka-lab/kubeconfig
+
+# Python bytecode (web UI)
+__pycache__/
+*.pyc
+
+# Claude Code local settings
+.claude/
